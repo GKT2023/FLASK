@@ -1,0 +1,26 @@
+<!-- <h1> The average marks is: {{results}} </h1>   -->
+
+<html>
+    <h1>Marks in each subject are: </h1>
+    {% for k,v in result_dict.items(): %}
+    <li>subject is: {{k}}, and marks is: {{v}}</li>
+    {% endfor %}
+    
+    {% if results >= 50 %}
+    <h1>results is pass and the average marks is {{results}}</h1>
+    {% else %}
+    <h1>results is fail and the average marks is {{results}}</h1>
+    <!--end if block using below syntax-->
+    {% endif %}
+</html>
+
+
+
+<!-- <html>
+{% if results >=50 %}
+<h1>The result is pass and the average marks is {{results}}</h1>
+{% else %}
+<h1>The result is fail and the average marks is {{results}}</h1>
+{% endif %}
+
+</html> -->
